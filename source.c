@@ -10,7 +10,8 @@ int main(){
 			        sinx_taylor(N,3,x,res);
 				        for(int i=0;i<N;i++){
 						                printf("sin(%.2f) by Taylor series=%f\n",x[i],sin(x[i]));
-								        }
+										printf("sin(%.2f)=%f\n",x[i],sin(x[i]));
+										        }
 					        return 0;
 }
 void sinx_taylor(int num_elements,int terms,double*x,double*result)
@@ -30,4 +31,5 @@ void sinx_taylor(int num_elements,int terms,double*x,double*result)
 												        result[i]=value;
 													        }
 }
+
 
