@@ -18,7 +18,7 @@ int main(int argc,char* argv[])
 		perror("mq_open()");
 		exit(1);
 	}
-	sprintf(buf, "Hello, world!\  n");
+	sprintf(buf, "Hello, world!\n");
 
 	if(mq_send(mq,buf,50,1)==-1){
 		perror("mq_send()");
